@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ivpqqa1g4obp"]
+
+[ext_resource type="Texture2D" uid="uid://buyclegogquma" path="res://icon.svg" id="1_3dk36"]
+[ext_resource type="Script" uid="uid://d0h2mlpbh7mpq" path="res://scenes/tile.gd" id="2_ywnoi"]
+
+[node name="Tile" type="Button" unique_id=640038930]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+flat = true
+script = ExtResource("2_ywnoi")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=425528483]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3dk36")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2139445829]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.1882353)

@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://ivpqqa1g4obp"]
 
 [ext_resource type="Texture2D" uid="uid://buyclegogquma" path="res://icon.svg" id="1_3dk36"]
-[ext_resource type="Script" uid="uid://d0h2mlpbh7mpq" path="res://scenes/tile.gd" id="2_ywnoi"]
+[ext_resource type="Script" uid="uid://d0h2mlpbh7mpq" path="res://scripts/tile.gd" id="2_ywnoi"]
 
 [node name="Tile" type="Button" unique_id=640038930]
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2

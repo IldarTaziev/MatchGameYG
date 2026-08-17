@@ -1,6 +1,6 @@
 extends Button
 
-
+signal clicked_tile(tile)
 var row : int = -1
 var col : int = -1
 var tile_type : int = 0
@@ -29,3 +29,11 @@ func update_visual():
 		5: color = Color.DARK_BLUE
 		_: color = Color.BLACK
 	modulate = color
+
+
+func _on_pressed() -> void:
+	emit_signal("clicked_tile", self)
+
+
+func highlight(on : bool):
+	color_rect.visible = on

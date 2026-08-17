@@ -8,5 +8,5 @@ script = ExtResource("1_g2h75")
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1276396711]
 offset_left = 184.0
 offset_top = 32.0
-offset_right = 882.0
-offset_bottom = 563.0
+offset_right = 1053.0
+offset_bottom = 597.0

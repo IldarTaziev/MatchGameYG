@@ -37,3 +37,7 @@ func _on_pressed() -> void:
 
 func highlight(on : bool):
 	color_rect.visible = on
+	
+func change_type(type):
+	tile_type = type
+	update_visual()

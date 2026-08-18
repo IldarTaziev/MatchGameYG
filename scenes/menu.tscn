@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cboufj278qaax"]
+
+[node name="Menu" type="Control" unique_id=212206171]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 644.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Name" type="RichTextLabel" parent="." unique_id=2067139599]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -114.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 38
+text = "Godot Crush"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play" type="Button" parent="." unique_id=1718817060]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 320.0
+offset_right = 728.0
+offset_bottom = 381.0
+text = "Play"
+
+[node name="Quit" type="Button" parent="." unique_id=1128588126]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 408.0
+offset_right = 728.0
+offset_bottom = 469.0
+text = "Quit"

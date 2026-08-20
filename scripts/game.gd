@@ -1,9 +1,7 @@
-extends Node2D
+extends Control
 
 @onready var grid : GridContainer = $GridContainer
 @onready var timer : Timer = $Timer
-@onready var label_score : RichTextLabel = $GUI/score
-@onready var label_timer : RichTextLabel = $GUI/timer
 
 const TOTAL_DURATION_SECONDS = 30
 const ROWS = 8
@@ -20,7 +18,6 @@ func _ready() -> void:
 	_create_board()
 	_ensure_no_initial_matches()
 	reset_timer()
-	set_score(0)
 
 ## Создает доску с тайлами
 func _create_board():
@@ -219,7 +216,7 @@ func refill():
 				).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 		await tween.finished
 
-
+## восполняет проверку на то есть ли при запуске совпадения
 func _ensure_no_initial_matches():
 	var matches
 	while true:
@@ -233,12 +230,11 @@ func _ensure_no_initial_matches():
 					tile['c']
 				)
 
-
+## Добавляет к score значение increment
 func set_score(increment):
 	score += increment
-	label_score.text = "Score : " + str(score)
 
-
+## Возобнавляет таймер на значение длительности уровня, ...
 func reset_timer():
 	score = 0
 	if not timer.is_stopped():
@@ -250,7 +246,3 @@ func reset_timer():
 func _on_timer_timeout() -> void:
 	# пока что конец игры
 	print("Games over! Your score is "+str(score))
-
-
-func _process(delta: float) -> void:
-	label_timer.text =  "Time : " + str(int(timer.time_left)) 

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cpwcefly3mih0"]
+
+[ext_resource type="Script" uid="uid://5i1gjvj2p3j3" path="res://scripts/game.gd" id="1_yqjtg"]
+
+[node name="Game" type="Control" unique_id=1618554262]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yqjtg")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1276396711]
+layout_mode = 1
+offset_right = 648.0
+offset_bottom = 648.0
+
+[node name="Timer" type="Timer" parent="." unique_id=614772472]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

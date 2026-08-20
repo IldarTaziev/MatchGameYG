@@ -12,7 +12,8 @@ config_version=5
 
 config/name="Yandex Games Test Proj"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(1, 0.27450982, 0.33333334, 1)
+config/icon="uid://dkgpc6bdoblla"
 
 [autoload]
 

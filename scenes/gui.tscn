@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bh3b1wuk1igda"]
+
+[node name="GUI" type="Control" unique_id=214475046]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 237.0
+offset_bottom = 644.0
+
+[node name="score" type="RichTextLabel" parent="." unique_id=1259541177]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 14.0
+offset_right = 202.0
+offset_bottom = 65.0
+text = "Score "
+vertical_alignment = 1
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=1168976936]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 65.0
+offset_right = 202.0
+offset_bottom = 116.0
+text = "Time"
+vertical_alignment = 1

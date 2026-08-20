@@ -11,7 +11,6 @@ func _ready() -> void:
 	color_rect.hide()
 
 
-
 func set_type(type,row,col):
 	self.row = row
 	self.col = col
